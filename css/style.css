@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('https://kalix.club/uploads/posts/2022-12/1671490161_kalix-club-p-oboi-na-rabochii-stol-beskonechnoe-leto-pi-3.jpg') center/cover no-repeat fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#form {
+  width: 300px;
+  margin: 10vh auto;
+  padding: 50px;
+  background-color: rgba(235, 221, 221, 0.1); /* Adjusted background color with alpha for a subtle effect */
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form h1 {
+  color: #284b63;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #284b63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-control {
+  margin-bottom: 15px;
+}
+
+.input-control label {
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.input-control input {
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input-control input:focus {
+  outline: none;
+  border-color: #284b63;
+}
+
+.input-control.success input {
+  border-color: #28a745;
+}
+
+.input-control.error input {
+  border-color: #dc3545;
+}
+
+.input-control.error {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 600px) {
+  #form {
+      width: 80%;
+  }
